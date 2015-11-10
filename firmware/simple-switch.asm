@@ -24,6 +24,7 @@ OUTPUT_PIN EQU 1
 TIMER_RESOLUTION equ 32
 
 TMR_TOO_LOW equ     600 / TIMER_RESOLUTION
+TMR_TOO_HIGH equ    2400 / TIMER_RESOLUTION
 TMR_OFF     equ     1400 / TIMER_RESOLUTION
 TMR_ON      equ     1600 / TIMER_RESOLUTION
 
@@ -78,9 +79,12 @@ output_is_off
     clrf    TMR0
 
     ; Wait for servo pulse falling edge
-    ; TODO: check for overflow!
+off_wait_for_falling
+    movlw   TMR_TOO_HIGH
+    subwf   TMR0, W
+    bnc     output_is_off
     btfsc   GPIO, SERVO_IN
-    goto    $-1
+    goto    off_wait_for_falling
 
     movf    TMR0, W
     movwf   pulse_width
@@ -92,6 +96,7 @@ output_is_off
     bnc     output_is_off
 
     bsf     GPIO, OUTPUT_PIN
+
 
 output_is_on
 
@@ -106,9 +111,12 @@ output_is_on
     clrf    TMR0
 
     ; Wait for servo pulse falling edge
-    ; TODO: check for overflow!
+on_wait_for_falling
+    movlw   TMR_TOO_HIGH
+    subwf   TMR0, W
+    bnc     output_is_on
     btfsc   GPIO, SERVO_IN
-    goto    $-1
+    goto    on_wait_for_falling
 
     movf    TMR0, W
     movwf   pulse_width
