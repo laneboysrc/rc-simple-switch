@@ -1,0 +1,8 @@
+*~
+*.hex
+*.tmp
+*.lst
+*.cod
+*.o
+*.a
+*.map
