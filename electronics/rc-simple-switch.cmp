@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Wed 11 Nov 2015 11:13:53 AM SGT
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Wed 11 Nov 2015 04:30:39 PM SGT
 
 BeginCmp
 TimeStamp = /5642901A;
@@ -29,10 +29,38 @@ IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /5642A686;
+TimeStamp = /5642F9D6;
 Reference = P1;
-ValeurCmp = CONN_5;
-IdModule  = debug_connector;
+ValeurCmp = CONN_1;
+IdModule  = Test_pad_1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5642F9B9;
+Reference = P2;
+ValeurCmp = CONN_1;
+IdModule  = Test_pad_1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5642F9D0;
+Reference = P3;
+ValeurCmp = CONN_1;
+IdModule  = Test_pad_1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5642FA87;
+Reference = P4;
+ValeurCmp = CONN_1;
+IdModule  = Test_pad_1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5642FA8D;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = Test_pad_1mm;
 EndCmp
 
 BeginCmp
