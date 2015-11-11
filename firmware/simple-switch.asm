@@ -82,7 +82,7 @@ output_is_off
 off_wait_for_falling
     movlw   TMR_TOO_HIGH
     subwf   TMR0, W
-    bnc     output_is_off
+    bc      output_is_off
     btfsc   GPIO, SERVO_IN
     goto    off_wait_for_falling
 
@@ -90,7 +90,7 @@ off_wait_for_falling
     movwf   pulse_width
     movlw   TMR_TOO_LOW
     subwf   pulse_width, w
-    bc      output_is_off
+    bnc     output_is_off
     movlw   TMR_ON
     subwf   pulse_width, w
     bnc     output_is_off
@@ -114,7 +114,7 @@ output_is_on
 on_wait_for_falling
     movlw   TMR_TOO_HIGH
     subwf   TMR0, W
-    bnc     output_is_on
+    bc      output_is_on
     btfsc   GPIO, SERVO_IN
     goto    on_wait_for_falling
 
@@ -122,7 +122,7 @@ on_wait_for_falling
     movwf   pulse_width
     movlw   TMR_TOO_LOW
     subwf   pulse_width, w
-    bc      output_is_on
+    bnc     output_is_on
     movlw   TMR_OFF
     subwf   pulse_width, w
     bc      output_is_on
