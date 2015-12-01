@@ -12,28 +12,36 @@
     LIST        r=dec
     RADIX       dec
 
-    PROCESSOR   PIC10F200
+    ; PROCESSOR   PIC10F200
+    ; #include    <p10f200.inc>
 
-    #include    <p10f200.inc>
+    PROCESSOR   PIC10LF322
+    #include    <p10lf322.inc>
 
     __CONFIG     _WDTE_OFF & _MCLRE_OFF & _CP_OFF
 
-SERVO_IN EQU 0
-OUTPUT_PIN EQU 1
+SERVO_IN            equ 0
+OUTPUT_PIN          equ 1
 
-TIMER_RESOLUTION equ 32
+TIMER_RESOLUTION    equ 32
 
-TMR_TOO_LOW equ     600 / TIMER_RESOLUTION
-TMR_TOO_HIGH equ    2400 / TIMER_RESOLUTION
-TMR_OFF     equ     1400 / TIMER_RESOLUTION
-TMR_ON      equ     1600 / TIMER_RESOLUTION
+TMR_TOO_LOW         equ     600 / TIMER_RESOLUTION
+TMR_TOO_HIGH        equ     2400 / TIMER_RESOLUTION
+TMR_OFF             equ     1400 / TIMER_RESOLUTION
+TMR_ON              equ     1600 / TIMER_RESOLUTION
+
+
+GPIO                equ PORTA
+
+
 
 ;******************************************************************************
 ;* VARIABLE DEFINITIONS
 ;******************************************************************************
 .data UDATA
 
-pulse_width res 1
+pulse_width         res 1
+
 
 
 ;******************************************************************************
@@ -55,10 +63,12 @@ Init
     movlw   10000100b   ; Wakeup on pin change disables, weak pull-ups enabled,
                         ; Timer0 clock source Fosc/4, Prescaler assigned to
                         ; Timer0, Prescaler 1:32 (= 32us per tick @ 4 MHz)
-    option
+    ;option
+    movwf   OPTION_REG
 
     movlw   00000001b   ; GPIO 0 input, all others output
-    tris    6
+    ;tris    6
+    movlw   TRISA
 
 
 
