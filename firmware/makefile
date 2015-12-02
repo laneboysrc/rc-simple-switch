@@ -1,8 +1,9 @@
 .PHONY: all clean program on off
 
+# DEVICE := pic10f200
 DEVICE := pic10lf322
 
-all: simple-switch.hex
+all: program
 
 simple-switch.hex : simple-switch.o
 	gplink -m -O 2 -o $@ $^
@@ -18,7 +19,7 @@ clean :
 	$(RM) *.o
 
 program : simple-switch.hex
-	pk2cmd -p $(DEVICE) -f simple-switch.hex -p
+	pk2cmd -p $(DEVICE) -f simple-switch.hex -m -t
 
 on :
 	pk2cmd -p $(DEVICE) -t
