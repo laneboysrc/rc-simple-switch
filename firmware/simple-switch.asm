@@ -12,19 +12,19 @@
     LIST        r=dec
     RADIX       dec
 
-    PROCESSOR   PIC10LF322
-    #include    <p10lf322.inc>
-    __CONFIG     _FOSC_INTOSC & _BOREN_OFF & _WDTE_OFF & _PWRTE_ON & _MCLRE_OFF & _CP_OFF & _LVP_OFF & _LPBOR_OFF
-GPIO                equ PORTA
+    PROCESSOR   PIC10F200
+    #include    <p10f200.inc>
+    __CONFIG     _WDTE_OFF & _MCLRE_OFF & _CP_OFF
 
-    ; PROCESSOR   PIC10F200
-    ; #include    <p10f200.inc>
-    ; __CONFIG     _WDTE_OFF & _MCLRE_OFF & _CP_OFF
 
-SERVO_IN            equ 0
-OUTPUT_PIN          equ 2
 
-TIMER_RESOLUTION    equ 32
+;******************************************************************************
+;* CONSTANT DEFINITIONS
+;******************************************************************************
+SERVO_IN            equ     0   ; Servo input is GP0
+OUTPUT_PIN          equ     2   ; Switch output is GP2
+
+TIMER_RESOLUTION    equ     32  ; Timer runs at Fosc/4 / 32 => 1 tick every 32us
 
 TMR_TOO_LOW         equ     600 / TIMER_RESOLUTION
 TMR_TOO_HIGH        equ     2400 / TIMER_RESOLUTION
@@ -47,35 +47,20 @@ pulse_width         res 1
 ;******************************************************************************
 .code_reset CODE    0x000
 
+
 ;******************************************************************************
 ; Initialization
 ;******************************************************************************
 Init
-    ; movlw   b'10000100b ; Wakeup on pin change disables, weak pull-ups enabled,
-    ;                     ; Timer0 clock source Fosc/4, Prescaler assigned to
-    ;                     ; Timer0, Prescaler 1:32 (= 32us per tick @ 4 MHz)
-    ; option
+    movlw   b'10000100' ; Wakeup on pin change disables, weak pull-ups enabled,
+                        ; Timer0 clock source Fosc/4, Prescaler assigned to
+                        ; Timer0, Prescaler 1:32 (= 32us per tick @ 4 MHz)
+    option
 
-    ; movlw   b'00000001'    ; GPIO 0 input, all others output
-    ; tris    6
+    movlw   b'00000001' ; GPIO 0 input, all others output
+    tris    6
 
-    movlw   b'00000100'     ; Weak pull-ups enabled,
-                            ; Timer0 clock source Fosc/4
-                            ; Prescaler assigned to Timer0,
-                            ; Prescaler 1:32 (= 32us per tick @ 4 MHz)
-    movwf   OPTION_REG
-
-    clrf    ANSELA
-
-    movlw   b'00000001'     ; GPIO 0 input, all others output
-    movwf   TRISA
-
-    movlw   000h
-    movwf   LATA
-
-    movlw   b'01010000'     ; 4 MHz clock
-    movwf   OSCCON
-
+    clrf    GPIO        ; Set all ports to low
 
 
 ;**********************************************************************
@@ -92,26 +77,29 @@ output_is_off
     btfss   GPIO, SERVO_IN
     goto    $-1
 
+    ; Start measuring the servo pulse width
     clrf    TMR0
 
     ; Wait for servo pulse falling edge
 off_wait_for_falling
     movlw   TMR_TOO_HIGH
     subwf   TMR0, W
-    bc      output_is_off
+    bc      output_is_off           ; Pulse longer than 2400us? -> Ignore
     btfsc   GPIO, SERVO_IN
     goto    off_wait_for_falling
 
     movf    TMR0, W
     movwf   pulse_width
-    movlw   TMR_TOO_LOW
+    movlw   TMR_TOO_LOW             ; Pulse shorter than 600us? -> Ignore
     subwf   pulse_width, w
     bnc     output_is_off
-    movlw   TMR_ON
+    movlw   TMR_ON                  ; Pulse longer than 1600us? -> Turn on!
     subwf   pulse_width, w
     bnc     output_is_off
 
     bsf     GPIO, OUTPUT_PIN
+
+
 
 output_is_on
     ; Wait for servo pulse being low
@@ -122,29 +110,29 @@ output_is_on
     btfss   GPIO, SERVO_IN
     goto    $-1
 
+    ; Start measuring the servo pulse width
     clrf    TMR0
 
     ; Wait for servo pulse falling edge
 on_wait_for_falling
     movlw   TMR_TOO_HIGH
     subwf   TMR0, W
-    bc      output_is_on
+    bc      output_is_on            ; Pulse longer than 2400us? -> Ignore
     btfsc   GPIO, SERVO_IN
     goto    on_wait_for_falling
 
     movf    TMR0, W
     movwf   pulse_width
-    movlw   TMR_TOO_LOW
+    movlw   TMR_TOO_LOW             ; Pulse shorter than 600us? -> Ignore
     subwf   pulse_width, w
     bnc     output_is_on
-    movlw   TMR_OFF
+    movlw   TMR_OFF                 ; Pulse shorter than 1400us? -> Turn off!
     subwf   pulse_width, w
     bc      output_is_on
 
     bcf     GPIO, OUTPUT_PIN
 
     goto    Main_loop
-
 
 
 ;**********************************************************************

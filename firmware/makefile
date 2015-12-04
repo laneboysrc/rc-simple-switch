@@ -1,9 +1,9 @@
 .PHONY: all clean program on off
 
-# DEVICE := pic10f200
-DEVICE := pic10lf322
+DEVICE := pic10f200
+# DEVICE := pic10lf322
 
-all: program
+all: simple-switch.hex
 
 simple-switch.hex : simple-switch.o
 	gplink -m -O 2 -o $@ $^
