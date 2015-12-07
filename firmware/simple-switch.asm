@@ -52,6 +52,12 @@ pulse_width         res 1
 ; Initialization
 ;******************************************************************************
 Init
+    movwf   OSCCAL      ; The last address in the program memory contains
+                        ; the factory set OSCCAL value with an movlw
+                        ; instruction. We put this value into OSCCAL to get
+                        ; a precise clock,
+                        ; See data sheet section 9.2.2 INTERNAL 4 MHz OSCILLATOR
+
     movlw   b'10000100' ; Wakeup on pin change disables, weak pull-ups enabled,
                         ; Timer0 clock source Fosc/4, Prescaler assigned to
                         ; Timer0, Prescaler 1:32 (= 32us per tick @ 4 MHz)
