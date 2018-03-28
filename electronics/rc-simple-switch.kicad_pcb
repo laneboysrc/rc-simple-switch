@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 99.949999 94.949999 120.050001 105.050001)
     (thickness 1.6)
-    (drawings 22)
+    (drawings 23)
     (tracks 32)
     (zones 0)
     (modules 13)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.254)
     (user_trace_width 0.381)
     (user_trace_width 0.508)
     (user_trace_width 0.762)
@@ -537,6 +537,9 @@
       (net 2 GND))
   )
 
+  (gr_text "Rev 2" (at 114.478 103.556) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text "RC switch" (at 110.16 96.19 180) (layer B.SilkS) (tstamp 5ABAF9F7)
     (effects (font (size 1 1) (thickness 0.25)) (justify mirror))
   )
