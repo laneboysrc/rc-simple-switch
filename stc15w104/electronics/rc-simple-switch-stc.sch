@@ -34,7 +34,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:rc-simple-switch-stc-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -353,5 +352,5 @@ S
 Text Label 4000 4100 2    60   ~ 0
 S-MCU
 Text Notes 7150 5800 0    60   ~ 0
-The output MOSFET is connected\nto RSTOUT_LOW on the MCU, which\nneeds to be programmed with the \nISP tool to be low after reset.\nThis way the load stays on when the \nMCU is starting up.
+The output MOSFET is connected\nto RSTOUT_LOW on the MCU, which\nneeds to be programmed with the \nISP tool to be low after reset.\nThis way the load stays off when the \nMCU is starting up.
 $EndSCHEMATC
