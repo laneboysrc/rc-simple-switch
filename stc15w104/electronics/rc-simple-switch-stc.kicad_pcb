@@ -66,11 +66,7 @@
     (mod_text_width 0.15)
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
-<<<<<<< HEAD
-    (pad_to_mask_clearance 0.1778)
-=======
     (pad_to_mask_clearance 0.1524)
->>>>>>> 9181ecc4bb65f250eed1ad588a5a69f280cfd76b
     (aux_axis_origin 100 100)
     (visible_elements FFFFFF7F)
     (pcbplotparams
