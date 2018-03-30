@@ -1,0 +1,13 @@
+Source:,/home/laneboysrc/projects/rc-simple-switch/pic10f200/electronics/rc-simple-switch.sch,,,,
+Date:,Fri 30 Mar 2018 09:07:37 AM,,,,
+Tool:,Eeschema 4.0.7-e2-6376~58~ubuntu16.04.1,,,,
+Component Count:,13,,,,
+Ref,Value,Footprint,Datasheet,Manufacturer,Vendor
+C1,1u,Capacitors_SMD:C_0603_HandSoldering,,,
+D1,1N4148,Diodes_SMD:D_SOD-323_HandSoldering,,,
+K1,IN,Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm,,,
+K2,SW,Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm,,,
+Q1,PMV30UN,TO_SOT_Packages_SMD:SOT-23,,NXP,
+R1,1k,Resistors_SMD:R_0603_HandSoldering,,,
+R2,10k,Resistors_SMD:R_0603_HandSoldering,,,
+U1,PIC10F200,TO_SOT_Packages_SMD:SOT-23-6_Handsoldering,,Microchip,
