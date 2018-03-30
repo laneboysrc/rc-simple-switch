@@ -129,11 +129,11 @@
     (at 118.034 97.46 180)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
-    (path /56428FAA)
+    (path /5ABD9012)
     (fp_text reference K2 (at 0 2.33 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value CONN_3 (at 0 -7.41 180) (layer B.Fab) hide
+    (fp_text value SW (at 0 -7.41 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -0.635 1.27) (end 1.27 1.27) (layer B.Fab) (width 0.1))
@@ -165,11 +165,11 @@
     (at 101.524 97.46 180)
     (descr "Through hole angled pin header, 1x03, 2.54mm pitch, 6mm pin length, single row")
     (tags "Through hole angled pin header THT 1x03 2.54mm single row")
-    (path /56428FB9)
+    (path /5ABD897A)
     (fp_text reference K1 (at 4.385 2.27 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value CONN_3 (at 4.385 -7.35 180) (layer F.Fab) hide
+    (fp_text value IN (at 4.385 -7.35 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 2.135 1.27) (end 4.04 1.27) (layer B.Fab) (width 0.1))
@@ -456,12 +456,12 @@
     (at 107 96.5)
     (descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
     (tags "Mesurement Point Round SMD Pad 1.5mm")
-    (path /5642FA8D)
+    (path /5ABD968A)
     (attr virtual)
     (fp_text reference P5 (at 0 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value CONN_1 (at 0 2) (layer F.Fab) hide
+    (fp_text value VDD (at 0 2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 1 0) (layer F.CrtYd) (width 0.05))
@@ -473,12 +473,12 @@
     (at 109 103.5)
     (descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
     (tags "Mesurement Point Round SMD Pad 1.5mm")
-    (path /5642F9D6)
+    (path /5ABD9549)
     (attr virtual)
     (fp_text reference P1 (at 0 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value CONN_1 (at 0 2) (layer F.Fab) hide
+    (fp_text value DAT (at 0 2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 1 0) (layer F.CrtYd) (width 0.05))
@@ -490,12 +490,12 @@
     (at 111 103.5)
     (descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
     (tags "Mesurement Point Round SMD Pad 1.5mm")
-    (path /5642F9B9)
+    (path /5ABD95CB)
     (attr virtual)
     (fp_text reference P2 (at 0 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value CONN_1 (at 0 2) (layer F.Fab) hide
+    (fp_text value CLK (at 0 2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 1 0) (layer F.CrtYd) (width 0.05))
@@ -507,12 +507,12 @@
     (at 109 96.5)
     (descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
     (tags "Mesurement Point Round SMD Pad 1.5mm")
-    (path /5642F9D0)
+    (path /5ABD9615)
     (attr virtual)
     (fp_text reference P3 (at 1.296 1.024) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value CONN_1 (at 0 2) (layer F.Fab) hide
+    (fp_text value VPP (at 0 2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 1 0) (layer F.CrtYd) (width 0.05))
@@ -524,12 +524,12 @@
     (at 111 96.5)
     (descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
     (tags "Mesurement Point Round SMD Pad 1.5mm")
-    (path /5642FA87)
+    (path /5ABD964E)
     (attr virtual)
     (fp_text reference P4 (at 0 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value CONN_1 (at 0 2) (layer F.Fab) hide
+    (fp_text value GND (at 0 2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 1 0) (layer F.CrtYd) (width 0.05))
