@@ -29,9 +29,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6899467"
-     inkscape:cx="442.91339"
-     inkscape:cy="150.59055"
+     inkscape:zoom="3.3798934"
+     inkscape:cx="181.86459"
+     inkscape:cy="184.19135"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -61,40 +61,23 @@
     <image
        sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/receiver.png"
        xlink:href="receiver.png"
-       y="871.72424"
-       x="95.416084"
-       id="image3430"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
+       width="173.851"
        height="120.35839"
-       width="173.851" />
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image3430"
+       x="48.669048"
+       y="894.21014" />
     <image
        sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/rc-simple-switch.png"
        xlink:href="rc-simple-switch.png"
-       y="893.28406"
-       x="308.28641"
-       id="image3492"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
+       width="211.72191"
        height="71.905556"
-       width="211.72191" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#ff6600;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 137.16538,947.0557 -27.27412,-0.50508 c 0,0 -49.339194,4.81444 -64.649763,-10.60661 C 23.767548,914.31511 5.6894296,888.86101 18.472454,861.19273 40.52417,813.46276 118.49382,848.6771 171.00549,846.04045 c 46.05937,-2.31268 77.1609,-24.05266 114.34916,-1.37783 27.50863,16.77287 24.66209,65.10935 24.66209,65.10935 l -0.12256,40.05422"
-       id="path3677"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccsssscc" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="46.307899"
-       y="829.82031"
-       id="text4479"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4481"
-         x="46.307899"
-         y="829.82031">Servo cable male-male</tspan></text>
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image3492"
+       x="308.28641"
+       y="893.28406" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -110,21 +93,21 @@
     <image
        sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/lipo.jpg"
        xlink:href="lipo.jpg"
-       y="800.59192"
-       x="526.97278"
-       id="image4219"
-       preserveAspectRatio="none"
+       width="158.80962"
        height="108.78458"
-       width="158.80962" />
+       preserveAspectRatio="none"
+       id="image4219"
+       x="526.97278"
+       y="800.59192" />
     <image
        sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/led-strip.jpg"
        xlink:href="led-strip.jpg"
-       width="177.82277"
-       height="138.49388"
-       preserveAspectRatio="none"
-       id="image4203"
+       y="859.66925"
        x="680.93048"
-       y="859.66925" />
+       id="image4203"
+       preserveAspectRatio="none"
+       height="138.49388"
+       width="177.82277" />
     <path
        sodipodi:nodetypes="cszc"
        inkscape:connector-curvature="0"
@@ -143,5 +126,44 @@
        id="path4222"
        d="m 516.68508,928.68434 c 63.00826,2.0203 91.08627,70.82595 122.6356,79.54756 31.54933,8.7215 64.70942,-13.05084 122.87056,-12.57242"
        style="fill:none;fill-rule:evenodd;stroke:#aad400;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/dupont-3p.png"
+       xlink:href="dupont-3p.png"
+       width="72.910034"
+       height="43.070408"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image4222"
+       x="883.35864"
+       y="-97.868973"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/dupont-3p.png"
+       xlink:href="dupont-3p.png"
+       y="909.52136"
+       x="278.93954"
+       id="image4219-3"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="43.070408"
+       width="72.910034" />
+    <path
+       sodipodi:nodetypes="czzc"
+       inkscape:connector-curvature="0"
+       id="path4224"
+       d="m 88.455355,888.57427 c 0,0 -9.085746,-72.562 50.646175,-77.17972 59.73191,-4.61772 97.39613,36.64603 109.27718,75.1756 11.88104,38.52957 35.934,33.0072 35.934,33.0072"
+       style="fill:none;fill-rule:evenodd;stroke:#ffd42a;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff6600;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 75.699262,888.11368 c 0,0 -5.349466,-69.73777 64.704808,-70.73377 46.05937,-2.31268 82.26781,19.99776 100.71802,68.73897 18.45021,48.74121 43.81898,45.85554 43.81898,45.85554"
+       id="path3677"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cczc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#803300;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 63.109309,888.55583 c 0,0 -3.444789,-65.70602 79.174391,-65.34524 45.68509,-2.23782 76.94485,20.21431 96.42102,74.00348 19.47616,53.78917 44.29254,46.76528 44.29254,46.76528"
+       id="path4226"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cczc" />
   </g>
 </svg>
