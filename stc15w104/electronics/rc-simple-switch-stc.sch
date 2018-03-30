@@ -34,19 +34,20 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:rc-simple-switch-stc-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "RC Simple Switch"
+Date "2018-03-30"
+Rev "1"
+Comp "LANE Boys RC"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "STC15W104 version"
 $EndDescr
 $Comp
 L D D1
@@ -219,43 +220,38 @@ $EndComp
 $Comp
 L C C1
 U 1 1 5ABB39C5
-P 5750 3400
-F 0 "C1" H 5775 3500 50  0000 L CNN
-F 1 "1u" H 5775 3300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5788 3250 50  0001 C CNN
-F 3 "" H 5750 3400 50  0001 C CNN
-	1    5750 3400
-	0    1    1    0   
+P 5800 3100
+F 0 "C1" H 5825 3200 50  0000 L CNN
+F 1 "1u" H 5825 3000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5838 2950 50  0001 C CNN
+F 3 "" H 5800 3100 50  0001 C CNN
+	1    5800 3100
+	-1   0    0    1   
 $EndComp
 $Comp
 L VCC #PWR05
 U 1 1 5ABB3A15
-P 5450 3250
-F 0 "#PWR05" H 5450 3100 50  0001 C CNN
-F 1 "VCC" H 5450 3400 50  0000 C CNN
-F 2 "" H 5450 3250 50  0001 C CNN
-F 3 "" H 5450 3250 50  0001 C CNN
-	1    5450 3250
+P 5450 2650
+F 0 "#PWR05" H 5450 2500 50  0001 C CNN
+F 1 "VCC" H 5450 2800 50  0000 C CNN
+F 2 "" H 5450 2650 50  0001 C CNN
+F 3 "" H 5450 2650 50  0001 C CNN
+	1    5450 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 3250 5450 3500
-Wire Wire Line
-	3100 3400 5550 3400
-Connection ~ 5450 3400
+	5450 2650 5450 3500
 $Comp
 L GND #PWR06
 U 1 1 5ABB3ADA
-P 6050 3400
-F 0 "#PWR06" H 6050 3150 50  0001 C CNN
-F 1 "GND" H 6050 3250 50  0000 C CNN
-F 2 "" H 6050 3400 50  0001 C CNN
-F 3 "" H 6050 3400 50  0001 C CNN
-	1    6050 3400
-	0    -1   -1   0   
+P 5800 3400
+F 0 "#PWR06" H 5800 3150 50  0001 C CNN
+F 1 "GND" H 5800 3250 50  0000 C CNN
+F 2 "" H 5800 3400 50  0001 C CNN
+F 3 "" H 5800 3400 50  0001 C CNN
+	1    5800 3400
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 3400 6050 3400
 $Comp
 L GND #PWR07
 U 1 1 5ABB3C60
@@ -287,9 +283,9 @@ Wire Wire Line
 Wire Wire Line
 	2600 4000 2600 4200
 Wire Wire Line
-	3000 4200 3100 4200
+	3100 4200 3000 4200
 Wire Wire Line
-	3100 4200 3100 3400
+	3100 2800 3100 4200
 Wire Wire Line
 	2500 4200 2700 4200
 Connection ~ 2600 4200
@@ -323,22 +319,9 @@ $EndComp
 Wire Wire Line
 	6950 2650 6950 2750
 Wire Wire Line
-	6750 2650 6750 2800
+	6750 2800 6750 2650
 Wire Wire Line
-	6750 2800 6300 2800
-Wire Wire Line
-	6300 2800 6300 2650
-$Comp
-L VCC #PWR010
-U 1 1 5ABB4F88
-P 6300 2650
-F 0 "#PWR010" H 6300 2500 50  0001 C CNN
-F 1 "VCC" H 6300 2800 50  0000 C CNN
-F 2 "" H 6300 2650 50  0001 C CNN
-F 3 "" H 6300 2650 50  0001 C CNN
-	1    6300 2650
-	1    0    0    -1  
-$EndComp
+	3100 2800 6750 2800
 Text Label 8850 3300 0    60   ~ 0
 SW
 Text Label 7850 3900 0    60   ~ 0
@@ -353,4 +336,14 @@ Text Label 4000 4100 2    60   ~ 0
 S-MCU
 Text Notes 7150 5800 0    60   ~ 0
 The output MOSFET is connected\nto RSTOUT_LOW on the MCU, which\nneeds to be programmed with the \nISP tool to be low after reset.\nThis way the load stays off when the \nMCU is starting up.
+Wire Wire Line
+	5800 3300 5800 3400
+Wire Wire Line
+	5800 2800 5800 2900
+Connection ~ 5450 2800
+Text Notes 2500 5900 0    60   ~ 0
+The diode provides at \nleast 0.5V voltage drop\nso that the 5.5V MCU can\nbe safely powered from\na 6V RC system.\n\nDo not use a Schottky diode!
+Connection ~ 5800 2800
+Text Notes 6550 2100 0    60   ~ 0
+Programming header
 $EndSCHEMATC
