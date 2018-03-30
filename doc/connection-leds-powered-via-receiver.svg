@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="250mm"
+   height="85mm"
+   viewBox="0 0 885.82677 301.1811"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="connection-leds-powered-via-receiver.svg"
+   inkscape:export-filename="/home/laneboysrc/projects/rc-simple-switch/doc/connection-leds-powered-via-receiver.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4743289"
+     inkscape:cx="334.38943"
+     inkscape:cy="123.45956"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1151"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-751.1811)">
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/receiver.png"
+       xlink:href="receiver.png"
+       y="871.72424"
+       x="95.416084"
+       id="image3430"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="120.35839"
+       width="173.851" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/rc-simple-switch.png"
+       xlink:href="rc-simple-switch.png"
+       y="892.60577"
+       x="351.0177"
+       id="image3492"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="71.905556"
+       width="211.72191" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/led-red.png"
+       xlink:href="led-red.png"
+       y="816.04425"
+       x="771.19037"
+       id="image3538"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="65.553291"
+       width="49.164967" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/led-red.png"
+       xlink:href="led-red.png"
+       width="49.164967"
+       height="65.553291"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image3541"
+       x="820.35535"
+       y="816.04425" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/led-white.png"
+       xlink:href="led-white.png"
+       y="817.39111"
+       x="674.8808"
+       id="image3602"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="64.206421"
+       width="48.154812" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/led-white.png"
+       xlink:href="led-white.png"
+       width="48.154812"
+       height="64.206421"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image3605"
+       x="723.03558"
+       y="817.39111" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/resistor.png"
+       xlink:href="resistor.png"
+       y="-701.48987"
+       x="879.57721"
+       id="image3666"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="16.573261"
+       width="121.26777"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/resistor.png"
+       xlink:href="resistor.png"
+       transform="matrix(0,1,-1,0,0,0)"
+       width="121.26777"
+       height="16.573261"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image3669"
+       x="879.07214"
+       y="-750.48224" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/resistor.png"
+       xlink:href="resistor.png"
+       y="-798.96954"
+       x="879.57721"
+       id="image3671"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="16.573261"
+       width="121.26777"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/resistor.png"
+       xlink:href="resistor.png"
+       transform="matrix(0,1,-1,0,0,0)"
+       width="121.26777"
+       height="16.573261"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image3673"
+       x="879.57721"
+       y="-847.96191" />
+    <image
+       sodipodi:absref="/home/laneboysrc/projects/rc-simple-switch/doc/resistor.png"
+       xlink:href="resistor.png"
+       y="-847.96191"
+       x="879.57721"
+       id="image3675"
+       style="image-rendering:optimizeQuality"
+       preserveAspectRatio="none"
+       height="16.573261"
+       width="121.26777"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff6600;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 137.16538,947.0557 -27.27412,-0.50508 c 0,0 -49.339194,4.81444 -64.649763,-10.60661 C 23.767548,914.31511 5.6894296,888.86101 18.472454,861.19273 40.52417,813.46276 118.49382,848.6771 171.00549,846.04045 c 46.05937,-2.31268 93.06085,-42.25391 155.56349,0.50506 26.59163,18.19173 24.45288,62.80804 24.45288,62.80804 l 0.29586,39.21738"
+       id="path3677"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsssscc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="43.94096"
+       y="831.59552"
+       id="text4479"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4481"
+         x="43.94096"
+         y="831.59552">Servo cable male-male</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 693.10642,1000.3846 c -0.12627,22.981 12.81754,33.0879 26.53817,33.1654 13.72064,0.077 23.7187,-13.0379 23.10724,-35.98671 l 0,0 0,0"
+       id="path4483"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czccc" />
+    <path
+       sodipodi:nodetypes="czc"
+       inkscape:connector-curvature="0"
+       id="path4485"
+       d="m 742.64468,1000.2187 c -0.12627,22.981 12.92214,31.111 26.64277,31.1885 13.72064,0.078 22.0772,-7.8609 21.46574,-30.8097"
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 790.43683,1000.7634 c -0.12627,22.981 13.04841,33.6364 26.76904,33.7138 13.72064,0.078 23.21362,-11.5227 22.60216,-34.4714"
+       id="path4487"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czc" />
+    <path
+       sodipodi:nodetypes="cszccc"
+       inkscape:connector-curvature="0"
+       id="path4489"
+       d="m 559.89256,907.07173 c 21.4026,1.38896 69.27301,-10.72763 72.28432,68.67123 1.13064,29.81154 -0.0994,57.24384 27.86871,60.07994 27.96815,2.836 33.82023,-12.0278 33.20877,-34.9766 l 0,0 0,0"
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="442.31369"
+       y="783.79083"
+       id="text4491"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4493"
+         x="442.31369"
+         y="783.79083"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle">Example: Car lights powered via the receiver</tspan></text>
+    <path
+       sodipodi:nodetypes="czc"
+       inkscape:connector-curvature="0"
+       id="path4495"
+       d="m 705.78499,880.206 c -0.12627,22.98097 9.9604,25.9451 23.68103,26.02258 13.72064,0.0775 25.80739,-2.39389 25.19593,-25.34265"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 754.49166,880.88964 c -0.12627,22.98097 13.36409,27.32291 27.08472,27.40039 13.72064,0.0775 22.32974,-4.64104 21.71828,-27.5898"
+       id="path4497"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czc" />
+    <path
+       sodipodi:nodetypes="czc"
+       inkscape:connector-curvature="0"
+       id="path4499"
+       d="m 803.23084,880.86612 c -0.12627,22.98097 13.55348,28.5856 27.27411,28.66308 13.72064,0.0775 22.32974,-5.14611 21.71828,-28.09487"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 559.75551,928.68435 c 63.00826,2.0203 67.66536,-23.42611 102.34666,-22.59102 34.68129,0.8351 44.24267,-3.1515 43.63121,-26.10026"
+       id="path4501"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4522"
+       y="1018.1211"
+       x="579.61639"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="1018.1211"
+         x="579.61639"
+         id="tspan4524"
+         sodipodi:role="line">4x 220 Ohm</tspan><tspan
+         y="1036.8711"
+         x="579.61639"
+         sodipodi:role="line"
+         id="tspan4526">(red-red-brown)</tspan></text>
+  </g>
+</svg>
