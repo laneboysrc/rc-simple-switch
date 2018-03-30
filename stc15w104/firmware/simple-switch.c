@@ -91,7 +91,19 @@ static void output_is_on()
 //----------------------------------------------------------------------------
 void main()
 {
-    // FIXME: Initialization of clock, timer, gpio ...
+    P3M0 = 1 << 3;  // Push-pull output on P3.3
+    P3M1 = 0x00;
+
+    // The programmer sets the clock to 6 MHz. We divide that by 8, and then
+    // run the timer sysclock/12.
+    // 6 MHz / (8 * 12) = 16 us per tick
+
+    PCON2 = 0x03;   // Master clock frequency/8
+
+    TMOD = 0x02;    // Timer0 Mode 2 (8 bit mode)
+    AUXR = 0x00;    // The clock source of Timer 0 is SYSclk/12
+    TH0 = 0;
+    TR0 = 1;        // Enable Timer0
 
     while (1) {
         output_is_off();
