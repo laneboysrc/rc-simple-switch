@@ -1,6 +1,6 @@
 # Simple switch for RC systems
 
-The RC Simple Switch allows you to turn an electronic load mounted to your RC model on or off remotely through your transmitter.
+The LANE Boys RC Simple Switch allows you to turn an electronic load mounted to your RC model on or off remotely through your transmitter.
 
 For example you can turn LEDs powered via the receiver on and off, or a light strip powered from an external battery.
 
@@ -16,7 +16,7 @@ This hysteresis makes it suitable for use with both switches and analog controls
 
 Power consumption of the RC switch itself (without load) is about 4mA.
 
-If you want such a RC switch but do not want to build it yourself, you can obtain one from [laneboysrc@gmail.com](mailto:laneboysrc@gmail.com)
+You can obtain a ready-to-use built-up RC simple switch from [laneboysrc@gmail.com](mailto:laneboysrc@gmail.com), or build one yourself using the information provided here.
 
 
 # Electronics
@@ -45,7 +45,7 @@ There is also a PCB for SMD components available for both variants. Gerber files
 
 # Firmware
 
-Pre-compiled HEX files are supplied: [PIC10F200 firmware](rc-simple-switch-pic10f200.hex) [STC15W104 firmware](rc-simple-switch-stc15w104.hex)
+Pre-compiled HEX files are supplied: [PIC10F200 firmware](rc-simple-switch-pic10f200.hex), [STC15W104 firmware](rc-simple-switch-stc15w104.hex)
 
 The firmware for both variants can be compiled with the [SDCC compiler](http://sdcc.sourceforge.net/).
 
