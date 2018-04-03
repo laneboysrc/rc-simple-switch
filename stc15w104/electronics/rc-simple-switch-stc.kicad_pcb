@@ -158,11 +158,6 @@
       (net 5 /SW))
     (pad 3 thru_hole oval (at 0 -5.08 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 3 VDD))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (module Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm (layer B.Cu) (tedit 5ABB53E3) (tstamp 5AC73383)

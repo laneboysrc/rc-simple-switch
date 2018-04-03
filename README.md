@@ -23,20 +23,19 @@ You can obtain a ready-to-use built-up RC simple switch from [laneboysrc@gmail.c
 
 There are two variants provided, both with identical size and functionality:
 
-### Microchip PIC10F200 variant
-
-![PIC10F200 PCB](doc/rc-simple-switch-pic10f200.png "PIC10F200 PCB")
-
 ### STC STC15W104 variant
 
 ![STC15W104 PCB](doc/rc-simple-switch-stc15w104.png "STC15W104 PCB")
 
+### Microchip PIC10F200 variant
+
+![PIC10F200 PCB](doc/rc-simple-switch-pic10f200.png "PIC10F200 PCB")
 
 Which one you choose depends on how easy it is for you to get the respective chips, your familiarity with them, and whether you already have respective programming tools.
 
-The PIC10F200 version requires a Microchip Pickit for programming, which can be quite an investment. The PIC10F200 can be obtained from major electronics distributors like Digikey, Element14, Mouser ...
-
 The STC15W104 can be programmed using a simple USB-to-serial converter, or a Raspberry Pi (or similar SBC with a serial port). The STC15W104 originates from China and can be found on eBay and Aliexpress.
+
+The PIC10F200 version requires a Microchip Pickit for programming, which can be quite an investment. The PIC10F200 can be obtained from major electronics distributors like Digikey, Element14, Mouser ...
 
 Both chips come in DIP package versions so you can easily build the hardware on a prototyping board.
 

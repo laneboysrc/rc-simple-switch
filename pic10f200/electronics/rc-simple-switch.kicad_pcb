@@ -3,7 +3,7 @@
   (general
     (links 19)
     (no_connects 0)
-    (area 90.745799 89.3 131.85 106.5782)
+    (area 99.949999 94.949999 120.050001 105.050001)
     (thickness 1.6)
     (drawings 23)
     (tracks 32)
@@ -154,11 +154,6 @@
       (net 9 /SW))
     (pad 3 thru_hole oval (at 0 -5.08 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 3 VCC))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (module Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm (layer B.Cu) (tedit 5ABAF181) (tstamp 5AC69A9D)
